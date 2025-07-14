@@ -12,6 +12,6 @@
   "page.home.activity": "{action, select, COMMENT {Commented task} ACTIVATE {Activated job} STOP {Stopped job} other {Unkown activity}}",
   "page.home.team": "Team",
   "page.reports.no-data": "No reports have been found.",
-  "page.main.heading": "Welcome to Racket Pro",
-  "page.main.text": "This is the main page of the Racket Pro website. Explore our features and enjoy your stay!"
+  "page.main.heading": "Turn Your Passion into a Profession",
+  "page.main.text": "Education, certification, and tools designed to build your coaching career."
 }
