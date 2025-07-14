@@ -1,0 +1,32 @@
+# Documentation: https://localizely.com/configuration-file/
+
+config_version: 1.0
+project_id: 12b1a719-15ae-4d9e-94b7-a90dc7de3879	 # Enter your project ID from: https://app.localizely.com/projects
+file_type: json
+upload:
+  files:
+    - file: src/lang/en.json
+      locale_code: en
+  params:
+    overwrite: true
+    reviewed: false
+    tag_added:
+      - new
+    tag_removed:
+      - removed
+    tag_updated:
+      - updated
+download:
+  files:
+    - file: src/lang/en.json
+      locale_code: en
+    - file: src/lang/de.json
+      locale_code: de
+    - file: src/lang/fr.json
+      locale_code: fr
+  params:
+    export_empty_as: empty
+    exclude_tags:
+      - removed
+    include_tags:
+      - new
