@@ -85,11 +85,11 @@ export default function NavbarContent({ user, locale, messages }: Props) {
 
               {langSwitcherMenuOpen && (
                 <Menu ref={langSwitcherMenuRef} aria-labelledby="lang-switcher-menu-button">
-                  <MenuItem href={`/de/${pathname.split("/").slice(2).join("/")}`} active={locale === "de"}>
-                    <FormattedMessage id="common.language-switcher" values={{ locale: "de" }} />
-                  </MenuItem>
                   <MenuItem href={`/en/${pathname.split("/").slice(2).join("/")}`} active={locale === "en"}>
                     <FormattedMessage id="common.language-switcher" values={{ locale: "en" }} />
+                  </MenuItem>
+                  <MenuItem href={`/de/${pathname.split("/").slice(2).join("/")}`} active={locale === "de"}>
+                    <FormattedMessage id="common.language-switcher" values={{ locale: "de" }} />
                   </MenuItem>
                   <MenuItem href={`/fr/${pathname.split("/").slice(2).join("/")}`} active={locale === "fr"}>
                     <FormattedMessage id="common.language-switcher" values={{ locale: "fr" }} />
