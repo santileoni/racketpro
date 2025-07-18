@@ -9,7 +9,7 @@ export default async function Hero({ locale }: { locale: Locale }) {
         <article className="flex flex-col items-start justify-center py-8 h-full max-w-2xl">
           <header className="mb-4">
             <span className="text-title-large font-bold uppercase">Become a certified coach</span>
-            <h1 className="text-display-large">{intl.formatMessage({ id: "page.main.heading" })}</h1>
+            <h1 className="text-display-medium">{intl.formatMessage({ id: "page.main.heading" })}</h1>
           </header>
           <p className="text-body-large">{intl.formatMessage({ id: "page.main.text" })}</p>
           <footer className="mt-8">
