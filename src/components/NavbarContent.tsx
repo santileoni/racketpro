@@ -115,7 +115,7 @@ export default function NavbarContent({ user, locale, messages }: Props) {
                 <div className="flex-shrink-0 mr-8">
                   <div className="text-white font-bold text-xl">
                     {/* Brand logo will be placed here */}
-                    LOGO
+                    <Image src="/images/company-logo@2x.png" alt="Logo" width={100} height={100} />
                   </div>
                 </div>
 
