@@ -1,0 +1,9 @@
+.hero {
+  @apply relative text-white min-h-[100svh] flex flex-col justify-center  w-full overflow-hidden;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    @apply aspect-[16/9];
+  }
+}

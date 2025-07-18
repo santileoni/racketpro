@@ -140,7 +140,7 @@ function MenuItem({ href, active, children }: MenuItemProps) {
       href={href}
       tabIndex={-1}
       role="menuitem"
-      className={clsx("block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200", { "bg-gray-200": active })}
+      className={clsx("block px-4 py-2 text-label-medium text-gray-700 hover:bg-gray-200", { "bg-gray-200": active })}
     >
       {children}
     </Link>

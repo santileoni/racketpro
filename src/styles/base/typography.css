@@ -1,0 +1,327 @@
+/* ====================================
+   Typography Styles
+   ==================================== */
+
+/* Display Typography */
+.text-display-large {
+  font-size: var(--font-size-display-large);
+  font-weight: 800;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.025em;
+  /* color: var(--text-primary); */
+}
+
+.text-display-medium {
+  font-size: var(--font-size-display-medium);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.025em;
+  /* color: var(--text-primary); */
+}
+
+.text-display-small {
+  font-size: var(--font-size-display-small);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.025em;
+  /* color: var(--text-primary); */
+}
+
+/* Headline Typography */
+.text-headline-large {
+  font-size: var(--font-size-headline-large);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  /* color: var(--text-primary); */
+}
+
+.text-headline-medium {
+  font-size: var(--font-size-headline-medium);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  /* color: var(--text-primary); */
+}
+
+.text-headline-small {
+  font-size: var(--font-size-headline-small);
+  font-weight: 600;
+  line-height: var(--leading-normal);
+  /* color: var(--text-primary); */
+}
+
+/* Title Typography */
+.text-title-large {
+  font-size: var(--font-size-title-large);
+  font-weight: 600;
+  line-height: var(--leading-normal);
+  /* color: var(--text-primary); */
+}
+
+.text-title-medium {
+  font-size: var(--font-size-title-medium);
+  font-weight: 500;
+  line-height: var(--leading-normal);
+  /* color: var(--text-primary); */
+}
+
+.text-title-small {
+  font-size: var(--font-size-title-small);
+  font-weight: 500;
+  line-height: var(--leading-normal);
+  /* color: var(--text-primary); */
+}
+
+/* Body Typography */
+.text-body-large {
+  font-size: var(--font-size-body-large);
+  font-weight: 400;
+  line-height: var(--leading-relaxed);
+  /* color: var(--text-primary); */
+}
+
+.text-body-medium {
+  font-size: var(--font-size-body-medium);
+  font-weight: 400;
+  line-height: var(--leading-normal);
+  /* color: var(--text-primary); */
+}
+
+.text-body-small {
+  font-size: var(--font-size-body-small);
+  font-weight: 400;
+  line-height: var(--leading-normal);
+  /* color: var(--text-secondary); */
+}
+
+/* Label Typography */
+.text-label-large {
+  font-size: var(--font-size-label-large);
+  font-weight: 500;
+  line-height: var(--leading-normal);
+  /* color: var(--text-primary); */
+}
+
+.text-label-medium {
+  font-size: var(--font-size-label-medium);
+  font-weight: 500;
+  line-height: var(--leading-normal);
+  /* color: var(--text-secondary); */
+}
+
+.text-label-small {
+  font-size: var(--font-size-label-small);
+  font-weight: 500;
+  line-height: var(--leading-normal);
+  /* color: var(--text-secondary); */
+}
+
+/* Text Utilities */
+.text-muted {
+  color: var(--text-secondary);
+}
+
+.text-accent {
+  color: var(--text-accent);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.text-error {
+  color: var(--color-error);
+}
+
+.text-info {
+  color: var(--color-info);
+}
+
+/* Font Family Modifiers */
+.font-family--primary {
+  font-family: var(--font-family-sans);
+}
+
+.font-family--mono {
+  font-family: var(--font-family-mono);
+}
+
+/* Line Height Utilities */
+.leading-tight {
+  line-height: var(--leading-tight);
+}
+
+.leading-normal {
+  line-height: var(--leading-normal);
+}
+
+.leading-relaxed {
+  line-height: var(--leading-relaxed);
+}
+
+/* Letter Spacing */
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+/* Mobile-Responsive Typography Classes */
+@media (max-width: 767px) {
+  /* Display Typography - Mobile */
+  .text-display-large {
+    font-size: var(--font-size-display-large-mobile);
+  }
+
+  /* Headline Typography - Mobile */
+  .text-headline-large {
+    font-size: var(--font-size-headline-large-mobile);
+  }
+
+  .text-headline-medium {
+    font-size: var(--font-size-headline-medium-mobile);
+  }
+
+  .text-headline-small {
+    font-size: var(--font-size-headline-small-mobile);
+  }
+
+  /* Title Typography - Mobile */
+  .text-title-large {
+    font-size: var(--font-size-title-large-mobile);
+  }
+
+  .text-title-medium {
+    font-size: var(--font-size-title-medium-mobile);
+  }
+
+  .text-title-small {
+    font-size: var(--font-size-title-small-mobile);
+  }
+
+  /* Body Typography - Mobile */
+  .text-body-large {
+    font-size: var(--font-size-body-large-mobile);
+  }
+
+  .text-body-medium {
+    font-size: var(--font-size-body-medium-mobile);
+  }
+
+  .text-body-small {
+    font-size: var(--font-size-body-small-mobile);
+  }
+
+  /* Label Typography - Mobile */
+  .text-label-large {
+    font-size: var(--font-size-label-large-mobile);
+  }
+
+  .text-label-medium {
+    font-size: var(--font-size-label-medium-mobile);
+  }
+
+  .text-label-small {
+    font-size: var(--font-size-label-small-mobile);
+  }
+}
+
+/* Typography Utility Classes */
+/* Desktop Utilities */
+.text-size--display-large {
+  font-size: var(--font-size-display-large);
+}
+.text-size--display-medium {
+  font-size: var(--font-size-display-medium);
+}
+.text-size--display-small {
+  font-size: var(--font-size-display-small);
+}
+.text-size--headline-large {
+  font-size: var(--font-size-headline-large);
+}
+.text-size--headline-medium {
+  font-size: var(--font-size-headline-medium);
+}
+.text-size--headline-small {
+  font-size: var(--font-size-headline-small);
+}
+.text-size--title-large {
+  font-size: var(--font-size-title-large);
+}
+.text-size--title-medium {
+  font-size: var(--font-size-title-medium);
+}
+.text-size--title-small {
+  font-size: var(--font-size-title-small);
+}
+.text-size--body-large {
+  font-size: var(--font-size-body-large);
+}
+.text-size--body-medium {
+  font-size: var(--font-size-body-medium);
+}
+.text-size--body-small {
+  font-size: var(--font-size-body-small);
+}
+.text-size--label-large {
+  font-size: var(--font-size-label-large);
+}
+.text-size--label-medium {
+  font-size: var(--font-size-label-medium);
+}
+.text-size--label-small {
+  font-size: var(--font-size-label-small);
+}
+
+/* Mobile Utilities */
+@media (max-width: 767px) {
+  .text-size--display-large {
+    font-size: var(--font-size-display-large-mobile);
+  }
+  .text-size--headline-large {
+    font-size: var(--font-size-headline-large-mobile);
+  }
+  .text-size--headline-medium {
+    font-size: var(--font-size-headline-medium-mobile);
+  }
+  .text-size--headline-small {
+    font-size: var(--font-size-headline-small-mobile);
+  }
+  .text-size--title-large {
+    font-size: var(--font-size-title-large-mobile);
+  }
+  .text-size--title-medium {
+    font-size: var(--font-size-title-medium-mobile);
+  }
+  .text-size--title-small {
+    font-size: var(--font-size-title-small-mobile);
+  }
+  .text-size--body-large {
+    font-size: var(--font-size-body-large-mobile);
+  }
+  .text-size--body-medium {
+    font-size: var(--font-size-body-medium-mobile);
+  }
+  .text-size--body-small {
+    font-size: var(--font-size-body-small-mobile);
+  }
+  .text-size--label-large {
+    font-size: var(--font-size-label-large-mobile);
+  }
+  .text-size--label-medium {
+    font-size: var(--font-size-label-medium-mobile);
+  }
+  .text-size--label-small {
+    font-size: var(--font-size-label-small-mobile);
+  }
+}

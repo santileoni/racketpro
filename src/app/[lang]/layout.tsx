@@ -6,7 +6,7 @@ import { Locale } from "@/lib/definitions";
 
 import { i18n } from "../../../i18n-config";
 
-import "@/app/globals.css";
+import "@/styles/main.css";
 
 export const metadata = {
   title: "Racket Pro",
@@ -27,7 +27,6 @@ export default async function Root({ params, children }: Props) {
         <Navbar locale={params.lang} user={user} />
 
         <Content>{children}</Content>
-
       </body>
     </html>
   );

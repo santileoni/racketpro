@@ -1,0 +1,68 @@
+/* ====================================
+   CSS Index - Alternative Main Entry Point
+   ==================================== */
+
+/* 
+   This file provides the same imports as main.css
+   Use this as an alternative entry point or for reference
+*/
+
+/* Tailwind CSS Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Foundation Styles */
+@import "./base/variables.css";
+@import "./base/reset.css";
+@import "./base/typography.css";
+@import "./base/globals.css";
+
+/* Layout & Grid Systems */
+@import "./layout/containers.css";
+
+/* Component Styles */
+@import "./components/buttons.css";
+@import "./components/forms.css";
+@import "./components/cards.css";
+@import "./components/navigation.css";
+@import "./components/hero.css";
+
+/* Utility Classes */
+@import "./utilities/animations.css";
+
+/* 
+   Available CSS Classes Quick Reference:
+   
+   🎨 Layout & Grid:
+   - .container, .container-sm, .container-md, .container-lg, .container-xl
+   - .grid, .grid-cols-{1-12}, .gap-{0-12}
+   - .flex, .flex-col, .justify-center, .items-center
+   - .sidebar-layout, .two-column, .three-column
+   
+   🎯 Components:
+   - .btn, .btn-primary, .btn-secondary, .btn-outline, .btn-ghost
+   - .card, .card-header, .card-body, .card-footer
+   - .form-group, .form-label, .form-input, .form-select
+   - .navbar, .sidebar, .breadcrumb, .pagination, .tabs
+   
+   🎭 Animations:
+   - .animate-fade-in, .animate-scale-in, .animate-slide-in-up
+   - .hover-lift, .hover-scale, .hover-glow
+   - .loading-dots, .skeleton
+   
+   📏 Spacing:
+   - .m-{0-6}, .mt-{0-6}, .mb-{0-6}, .ml-{0-6}, .mr-{0-6}
+   - .p-{0-6}, .pt-{0-6}, .pb-{0-6}, .pl-{0-6}, .pr-{0-6}
+   - .mx-{0-6}, .my-{0-6}, .px-{0-6}, .py-{0-6}
+   
+   📱 Responsive:
+   - .hidden, .block, .flex, .grid
+   - .sm:*, .md:*, .lg:*, .xl:*, .2xl:*
+   - .w-full, .h-full, .max-w-*, .min-h-*
+   
+   🎨 Typography:
+   - .heading-{1-6}, .text-body, .text-caption
+   - .font-{light|normal|medium|semibold|bold}
+   - .text-{center|left|right}, .leading-{tight|normal|relaxed}
+*/
