@@ -1,0 +1,42 @@
+/* ====================================
+   Featured Course Component Styles
+   ==================================== */
+
+.featured-course-container {
+  min-height: 320px; /* Fluid minimum height instead of fixed */
+}
+
+.featured-course-image {
+  min-height: 200px;
+  height: 100%;
+}
+
+/* Desktop specific heights that work better than Tailwind arbitrary values */
+@media (min-width: 768px) {
+  .featured-course-container {
+    min-height: 270px;
+  }
+
+  .featured-course-image {
+    width: 374px;
+    min-height: 232px;
+  }
+}
+
+/* Ensure proper stacking and spacing on mobile */
+.featured-course-content {
+  min-height: 0; /* Allow content to shrink */
+}
+
+/* Price positioning helper */
+.featured-course-price {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .featured-course-price {
+    bottom: 1.5rem;
+    right: 2.5rem;
+  }
+}

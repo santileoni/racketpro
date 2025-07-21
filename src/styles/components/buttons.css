@@ -159,7 +159,7 @@
 .btn-sm {
   padding: var(--space-xs) var(--space-sm);
   font-size: var(--font-size-label-medium);
-  border-radius: var(--radius-sm);
+  /* border-radius: var(--radius-sm); */
 }
 
 .btn-lg {

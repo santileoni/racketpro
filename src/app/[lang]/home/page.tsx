@@ -1,6 +1,7 @@
 import { getIntl } from "@/lib/intl";
 import { Locale } from "@/lib/definitions";
 import AvailableCoursesSection from "@/components/AvailableCoursesSection";
+import FeaturedCourse from "@/components/FeaturedCourse";
 
 interface Props {
   params: {
@@ -36,6 +37,8 @@ async function PageContent({ locale }: { locale: Locale }) {
           <div className="absolute inset-0 bg-black/50"></div>
         </figure>
       </section>
+
+      <FeaturedCourse />
 
       <AvailableCoursesSection />
     </>
