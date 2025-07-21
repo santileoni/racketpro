@@ -30,6 +30,7 @@
 @import "./components/navigation.css";
 @import "./components/hero.css";
 @import "./components/featured-course.css";
+@import "./components/testimonials.css";
 
 /* Utility Classes */
 @import "./utilities/animations.css";

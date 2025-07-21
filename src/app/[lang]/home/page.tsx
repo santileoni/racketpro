@@ -3,6 +3,7 @@ import { Locale } from "@/lib/definitions";
 import AvailableCoursesSection from "@/components/AvailableCoursesSection";
 import FeaturedCourse from "@/components/FeaturedCourse";
 import ImageTextBanner from "@/components/ImageTextBanner";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 interface Props {
   params: {
@@ -42,6 +43,9 @@ async function PageContent({ locale }: { locale: Locale }) {
       <FeaturedCourse />
 
       <ImageTextBanner />
+
+      <TestimonialsSection />
+
       {/* <AvailableCoursesSection /> */}
     </>
   );

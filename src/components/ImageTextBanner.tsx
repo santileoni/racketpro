@@ -24,7 +24,7 @@ export default function ImageTextBanner() {
               Racketpro empowers and inspires current and future coaching leaders within the racket sports community,
               fostering excellence and innovation across the rackets industry.
             </p>
-            <p>That's the racketpro way!</p>
+            <p>That&apos;s the racketpro way!</p>
           </div>
 
           <footer>

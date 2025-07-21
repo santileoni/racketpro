@@ -1,0 +1,148 @@
+/* ====================================
+   Testimonials Component Styles
+   ==================================== */
+
+/* Line clamp utility for testimonial text */
+.line-clamp-6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom testimonial card styling */
+.testimonial-card {
+  /* Ensure smooth transitions and proper z-indexing */
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+
+  @apply max-w-[405px] min-h-[340px];
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+}
+
+.testimonial-card:hover .testimonial-content {
+  box-shadow: 0px 20px 40px -4px rgba(12, 12, 13, 0.15), 0px 8px 8px -4px rgba(12, 12, 13, 0.1);
+}
+
+/* Star rating styling */
+.star-rating {
+  filter: drop-shadow(0 1px 2px rgba(255, 204, 0, 0.2));
+}
+
+/* Profile image styling */
+.testimonial-profile-image {
+  /* Add subtle border and shadow */
+  width: 118px;
+  height: 180px;
+}
+
+/* Quote icon styling */
+.testimonial-quote-icon {
+  /* opacity: 0.15; */
+  transition: opacity 300ms ease-in-out;
+}
+
+.testimonial-card:hover .testimonial-quote-icon {
+  opacity: 0.25;
+}
+
+/* Content text styling */
+.testimonial-text {
+  /* Ensure proper text rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Author name styling */
+.testimonial-author-name {
+  /* Add slight letter spacing for better readability */
+  letter-spacing: 0.01em;
+}
+
+/* Organization text styling */
+.testimonial-organization {
+  /* Ensure proper line height and spacing */
+  line-height: 1.4;
+}
+
+/* Content spacing adjustments */
+.testimonial-content {
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
+  max-width: 327px;
+  width: 100%;
+  min-height: 292px;
+}
+
+/* Increase content width on larger screens */
+@media (min-width: 1024px) {
+  .testimonial-content {
+    max-width: calc(360px + 42px);
+    width: 100%;
+    min-height: 320px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  /* Mobile layout - stack vertically */
+  .testimonial-card > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: auto;
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  /* Quote icon positioning on mobile - above the content */
+  .testimonial-card > div > div:first-child {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+  }
+
+  /* Profile image adjustments for mobile */
+  .testimonial-card .testimonial-profile-image {
+    width: 80px !important;
+    height: 80px !important;
+    margin-bottom: 1rem;
+  }
+
+  /* Content card adjustments for mobile */
+  .testimonial-card .testimonial-content {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    min-height: auto;
+  }
+
+  /* Reduce padding on mobile */
+  .testimonial-card .testimonial-content > div {
+    padding: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+}

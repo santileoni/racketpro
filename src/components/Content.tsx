@@ -3,5 +3,5 @@ interface Props {
 }
 
 export default function Content({ children }: Props) {
-  return <div className="w-full">{children}</div>;
+  return <main className="w-full">{children}</main>;
 }
