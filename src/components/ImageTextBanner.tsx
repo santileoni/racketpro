@@ -7,21 +7,24 @@ export default function ImageTextBanner() {
         <article className="flex flex-col items-start justify-center py-8 h-full max-w-[41rem]">
           <header className="mb-6 w-full">
             <div className="flex flex-wrap items-center gap-2 mb-1">
-              <h1 className="text-display-small font-bold text-white">We Are</h1>
-              <div className="image-text-banner__brand-pill inline-flex items-center bg-white px-4 py-1 rounded-full border-[3px] border-[#F76900]">
-                <span className="text-display-small font-extrabold text-[#003262] tracking-tight">racketpro</span>
-              </div>
+              <h2 className="text-display-small font-bold text-white">
+                We Are
+                <div className="image-text-banner__brand-pill inline-flex items-center bg-white px-4 pb-[0.25rem] rounded-full border-[3px] border-brand-orange ml-2">
+                  <span className="text-display-small font-extrabold block text-brand-navy tracking-tight">
+                    racketpro
+                  </span>
+                </div>
+                The Gold Standard of Pickleball Education
+              </h2>
             </div>
-            <h2 className="text-display-small font-bold text-white leading-tight">The Gold Standard</h2>
-            <h2 className="text-display-small font-bold text-white leading-tight">of Pickleball Education</h2>
           </header>
 
-          <div className="mb-6 w-full">
-            <p className="text-body-medium text-white leading-relaxed">
+          <div className="mb-6 w-full typo typo--white">
+            <p>
               Racketpro empowers and inspires current and future coaching leaders within the racket sports community,
               fostering excellence and innovation across the rackets industry.
             </p>
-            <p className="text-body-medium text-white leading-relaxed mt-4">That's the racketpro way!</p>
+            <p>That's the racketpro way!</p>
           </div>
 
           <footer>

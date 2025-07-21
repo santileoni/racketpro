@@ -17,6 +17,7 @@
 @import "./base/reset.css";
 @import "./base/typography.css";
 @import "./base/globals.css";
+@import "./base/typo.css";
 
 /* Layout & Grid Systems */
 @import "./layout/containers.css";

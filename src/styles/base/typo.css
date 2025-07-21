@@ -1,0 +1,248 @@
+/* ! purgecss start ignore
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1280px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 1280px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1280px) {
+  h4 {
+    font-size: 1.4rem;
+  }
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+@media (min-width: 1280px) {
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+} */
+
+p {
+  line-height: 1.8;
+}
+
+.typo {
+  width: 100%;
+}
+
+.typo--white {
+  color: #fff;
+}
+
+.typo * {
+  margin: 1.5rem 0;
+}
+
+.typo h1,
+.typo h2,
+.typo h3,
+.typo h4,
+.typo h5,
+.typo h6 {
+  line-height: 1.5;
+  color: var(--color-primary);
+  margin: 2.5rem 0 1rem;
+}
+
+.typo h1 + p,
+.typo h1 + ul,
+.typo h1 + ol,
+.typo h2 + p,
+.typo h2 + ul,
+.typo h2 + ol,
+.typo h3 + p,
+.typo h3 + ul,
+.typo h3 + ol,
+.typo h4 + p,
+.typo h4 + ul,
+.typo h4 + ol,
+.typo h5 + p,
+.typo h5 + ul,
+.typo h5 + ol,
+.typo h6 + p,
+.typo h6 + ul,
+.typo h6 + ol {
+  margin-top: 0;
+}
+
+.typo p {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.typo a {
+  font-weight: 700;
+  color: inherit;
+  word-wrap: break-word;
+}
+
+.typo a:hover,
+.typo a:focus {
+  text-decoration: underline;
+}
+
+.typo blockquote {
+  font-weight: 500;
+  padding: 0 1.5rem;
+  color: var(--color-base);
+}
+
+.typo ul,
+.typo ol {
+  padding: 0 0 0 1rem;
+}
+
+.typo ul li,
+.typo ol li {
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.typo ul li:last-of-type,
+.typo ol li:last-of-type {
+  margin: 0;
+}
+
+.typo ul {
+  list-style-type: none;
+  padding: 0 0 0 3.5rem;
+}
+
+.typo ul li {
+  position: relative;
+}
+
+.typo ul li:before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: -3.5rem;
+  height: 0.1rem;
+  width: 2rem;
+  background: var(--color-orange);
+}
+
+.typo ol {
+  list-style-type: decimal;
+}
+
+.typo--white {
+  color: #fff;
+}
+
+.typo--white h1,
+.typo--white h2,
+.typo--white h3,
+.typo--white h4,
+.typo--white h5,
+.typo--white h6 {
+  line-height: 1.5;
+  color: #fff;
+  margin: 1.5rem 0;
+}
+
+.typo .featured-heading {
+  font-size: 1.3rem;
+  color: var(--color-base);
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 1280px) {
+  .typo .featured-heading {
+    font-size: 1.5rem;
+  }
+}
+
+.typo .large-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-base);
+}
+
+@media (min-width: 1280px) {
+  .typo .large-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 2px solid #ededed;
+  padding: 0.5rem;
+}
+
+table th {
+  text-align: left;
+  background: var(--color-base);
+  color: #fff;
+}
+
+table.striped tr:nth-child(even) {
+  background: #ededed;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.typo > :not(div):first-child,
+.typo > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.typo > :last-child,
+.typo ol li:last-child,
+.typo ul li:last-child {
+  margin-bottom: 0 !important;
+}

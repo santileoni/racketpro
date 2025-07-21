@@ -163,7 +163,7 @@
 }
 
 .btn-lg {
-  padding: var(--space-md) var(--space-lg);
+  /* padding: var(--space-sm) var(--space-lg); */
   font-size: var(--font-size-title-large);
   /* border-radius: var(--radius-lg); */
 }
