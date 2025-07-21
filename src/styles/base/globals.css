@@ -24,7 +24,7 @@ html {
 }
 
 /* Scrollbar styles for webkit browsers */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
@@ -40,7 +40,7 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--border-dark);
-}
+} */
 
 /* Print styles */
 @media print {

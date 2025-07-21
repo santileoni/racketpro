@@ -4,6 +4,7 @@ import AvailableCoursesSection from "@/components/AvailableCoursesSection";
 import FeaturedCourse from "@/components/FeaturedCourse";
 import ImageTextBanner from "@/components/ImageTextBanner";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import EducationHighlights from "@/components/EducationHighlights";
 
 interface Props {
   params: {
@@ -46,6 +47,7 @@ async function PageContent({ locale }: { locale: Locale }) {
 
       <TestimonialsSection />
 
+      <EducationHighlights />
       {/* <AvailableCoursesSection /> */}
     </>
   );
