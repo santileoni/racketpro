@@ -21,9 +21,9 @@
 
 .text-display-small {
   font-size: var(--font-size-display-small);
-  font-weight: 600;
+  font-weight: 700;
   line-height: var(--leading-tight);
-  letter-spacing: -0.025em;
+  /* letter-spacing: -0.025em; */
   /* color: var(--text-primary); */
 }
 

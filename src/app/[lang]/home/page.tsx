@@ -16,12 +16,12 @@ async function PageContent({ locale }: { locale: Locale }) {
   return (
     <section className="hero">
       <div className="container h-full mx-auto">
-        <article className="flex flex-col items-start justify-center py-8 h-full max-w-2xl">
-          <header className="mb-4">
-            <span className="text-title-large font-bold uppercase">Become a certified coach</span>
+        <article className="flex flex-col items-start justify-center py-8 h-full max-w-[38rem]">
+          <header className="mb-4 w-full">
+            <span className="text-title-small font-bold uppercase text-neutral-300">Become a certified coach</span>
             <h1 className="text-display-small">{intl.formatMessage({ id: "page.main.heading" })}</h1>
           </header>
-          <p className="text-body-large">{intl.formatMessage({ id: "page.main.text" })}</p>
+          <p className="text-base">{intl.formatMessage({ id: "page.main.text" })}</p>
           <footer className="mt-8">
             <a href="/" className="btn btn-secondary">
               Get Started
