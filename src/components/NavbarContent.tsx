@@ -109,12 +109,6 @@ export default function NavbarContent({ user, locale, messages }: Props) {
       >
         Skip to main content
       </a>
-      <a
-        href="#nav-end"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-40 bg-white text-gray-900 px-4 py-2 rounded-md font-medium z-[60] focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-        Skip navigation
-      </a>
 
       <header className="fixed top-0 left-0 z-50 w-full pt-4 px-4 sm:px-6 lg:px-8 lg:top-8">
         <div className="bg-[#003262] rounded-full container mx-auto">
@@ -516,16 +510,17 @@ export default function NavbarContent({ user, locale, messages }: Props) {
                     <button className="text-white hover:bg-blue-700 hover:text-white flex items-center px-3 py-2 rounded-md text-base font-medium w-full focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800 focus:bg-blue-700">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
                         fill="none"
-                        viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
                         className="w-5 h-5 mr-2"
                       >
                         <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                          d="M17.0852 13C17.8352 13 18.4952 12.59 18.8352 11.97L22.4152 5.48C22.7852 4.82 22.3052 4 21.5452 4H6.74516L5.80516 2H2.53516V4H4.53516L8.13516 11.59L6.78516 14.03C6.05516 15.37 7.01516 17 8.53516 17H20.5352V15H8.53516L9.63516 13H17.0852ZM7.69516 6H19.8452L17.0852 11H10.0652L7.69516 6ZM8.53516 18C7.43516 18 6.54516 18.9 6.54516 20C6.54516 21.1 7.43516 22 8.53516 22C9.63516 22 10.5352 21.1 10.5352 20C10.5352 18.9 9.63516 18 8.53516 18ZM18.5352 18C17.4352 18 16.5452 18.9 16.5452 20C16.5452 21.1 17.4352 22 18.5352 22C19.6352 22 20.5352 21.1 20.5352 20C20.5352 18.9 19.6352 18 18.5352 18Z"
+                          fill="white"
                         />
                       </svg>
                       Shopping Cart
@@ -558,9 +553,6 @@ export default function NavbarContent({ user, locale, messages }: Props) {
           </nav>
         </div>
       </header>
-
-      {/* Navigation end marker for skip link */}
-      <div id="nav-end" className="sr-only" tabIndex={-1}></div>
     </IntlProvider>
   );
 }
