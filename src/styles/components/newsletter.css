@@ -1,0 +1,275 @@
+/* ====================================
+   Newsletter Signup Component Styles
+   ==================================== */
+
+.newsletter-signup {
+  background-color: var(--bg-primary);
+  padding: var(--space-2xl) 0;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  max-width: 100%;
+}
+
+/* Header Styles */
+.newsletter-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.newsletter-title {
+  font-size: var(--font-size-headline-medium-mobile);
+  font-weight: 800;
+  color: var(--color-primary-500);
+  line-height: var(--leading-tight);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.newsletter-subtitle {
+  font-size: var(--font-size-body-medium-mobile);
+  font-weight: 600;
+  color: var(--color-gray-600);
+  line-height: var(--leading-normal);
+  margin: 0;
+  max-width: 24rem;
+}
+
+/* Form Container */
+.newsletter-form-container {
+  width: 100%;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  width: 100%;
+}
+
+/* Form Row - Mobile First */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* Form Groups */
+.newsletter-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-bottom: 0;
+}
+
+.newsletter-form .form-label {
+  font-size: var(--font-size-label-medium);
+  font-weight: 600;
+  color: var(--color-primary-500);
+  margin-bottom: 0;
+}
+
+/* Custom Input Styling */
+.newsletter-input {
+  padding: var(--space-sm) var(--space-xs);
+  font-size: var(--font-size-body-medium);
+  font-weight: 300;
+  color: var(--color-gray-600);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-orange-500);
+  border-radius: 0;
+  transition: all var(--transition-fast);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-bottom-color: var(--color-orange-600);
+  box-shadow: none;
+}
+
+.newsletter-input::placeholder {
+  color: var(--color-gray-600);
+  font-weight: 300;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* Custom Checkbox */
+.consent-group {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  cursor: pointer;
+  font-size: var(--font-size-label-small);
+  font-weight: 600;
+  color: var(--color-primary-500);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+.consent-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.consent-checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.consent-checkmark svg {
+  width: 18px;
+  height: 18px;
+  transition: all var(--transition-fast);
+}
+
+.consent-checkbox:not(:checked) + .consent-checkmark svg rect {
+  fill: transparent;
+  stroke: var(--color-gray-400);
+}
+
+.consent-checkbox:not(:checked) + .consent-checkmark svg path {
+  opacity: 0;
+}
+
+.consent-checkbox:checked + .consent-checkmark svg rect {
+  fill: var(--color-orange-500);
+  stroke: var(--color-orange-500);
+}
+
+.consent-checkbox:checked + .consent-checkmark svg path {
+  opacity: 1;
+}
+
+.consent-text {
+  flex: 1;
+}
+
+/* Newsletter Submit Button */
+.newsletter-submit-btn {
+  background-color: var(--color-orange-500);
+  color: white;
+  border: none;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-rounded);
+  font-size: var(--font-size-title-large);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  align-self: flex-start;
+}
+
+.newsletter-submit-btn:hover:not(:disabled) {
+  background-color: var(--color-orange-600);
+  transform: translateY(-1px);
+}
+
+.newsletter-submit-btn:active:not(:disabled) {
+  background-color: var(--color-orange-700);
+  transform: translateY(0);
+}
+
+.newsletter-submit-btn:disabled {
+  background-color: var(--color-gray-400);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.newsletter-submit-btn .btn-icon {
+  width: 14px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .newsletter-content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2xl);
+  }
+
+  .newsletter-header {
+    flex: 0 0 auto;
+    max-width: 26rem;
+  }
+
+  .newsletter-title {
+    font-size: var(--font-size-headline-medium);
+  }
+
+  .newsletter-subtitle {
+    font-size: var(--font-size-body-medium);
+    max-width: 22.5rem;
+  }
+
+  .newsletter-form-container {
+    flex: 1;
+    max-width: 38rem;
+  }
+
+  .form-row {
+    flex-direction: row;
+    gap: var(--space-lg);
+  }
+
+  .form-row .form-group {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .newsletter-signup {
+    padding: 6.25rem 0;
+  }
+
+  .newsletter-content {
+    gap: 4rem;
+  }
+
+  .newsletter-title {
+    font-size: 2rem;
+  }
+}
+
+/* Focus and Accessibility */
+.newsletter-form *:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.consent-label:focus-within .consent-checkmark {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}

@@ -26,6 +26,7 @@
 @import "./components/image-text-banner.css";
 @import "./components/education-highlights.css";
 @import "./components/testimonials.css";
+@import "./components/newsletter.css";
 
 /* Utility Styles */
 @import "./utilities/animations.css";

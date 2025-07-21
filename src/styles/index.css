@@ -32,6 +32,7 @@
 @import "./components/featured-course.css";
 @import "./components/education-highlights.css";
 @import "./components/testimonials.css";
+@import "./components/newsletter.css";
 
 /* Utility Classes */
 @import "./utilities/animations.css";
