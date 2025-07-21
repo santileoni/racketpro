@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Content from "@/components/Content";
+import Footer from "@/components/Footer";
 
 import { getUser } from "@/lib/data";
 import { Locale } from "@/lib/definitions";
@@ -27,6 +28,8 @@ export default async function Root({ params, children }: Props) {
         <Navbar locale={params.lang} user={user} />
 
         <Content>{children}</Content>
+
+        <Footer />
       </body>
     </html>
   );

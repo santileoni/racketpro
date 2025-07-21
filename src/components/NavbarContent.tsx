@@ -116,8 +116,8 @@ export default function NavbarContent({ user, locale, messages }: Props) {
         Skip navigation
       </a>
 
-      <div className="fixed top-0 left-0 z-50 w-full pt-4 px-4 sm:px-6 lg:px-8 lg:top-8">
-        <header className="bg-[#003262] rounded-full container mx-auto">
+      <header className="fixed top-0 left-0 z-50 w-full pt-4 px-4 sm:px-6 lg:px-8 lg:top-8">
+        <div className="bg-[#003262] rounded-full container mx-auto">
           <nav aria-label="Primary navigation">
             <div className="mx-auto py-2">
               <div className="h-16 flex items-stretch justify-between">
@@ -556,8 +556,8 @@ export default function NavbarContent({ user, locale, messages }: Props) {
               )}
             </div>
           </nav>
-        </header>
-      </div>
+        </div>
+      </header>
 
       {/* Navigation end marker for skip link */}
       <div id="nav-end" className="sr-only" tabIndex={-1}></div>
