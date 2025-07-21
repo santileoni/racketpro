@@ -1,0 +1,29 @@
+/* ====================================
+   ImageTextBanner Component Styles
+   ==================================== */
+
+.image-text-banner {
+  /* Inherits from .hero base styles */
+}
+
+.image-text-banner__overlay {
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 0) 35.315%,
+    rgba(0, 0, 0, 0.286) 48.56%,
+    rgba(0, 0, 0, 0.37) 67.826%,
+    rgba(0, 0, 0, 0.8) 87.726%
+  );
+}
+
+.image-text-banner__brand-pill {
+  /* Additional styling for the brand pill if needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments for the brand pill */
+@media (max-width: 768px) {
+  .image-text-banner__brand-pill {
+    padding: 0.25rem 1rem;
+  }
+}

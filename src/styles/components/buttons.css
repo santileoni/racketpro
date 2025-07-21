@@ -153,7 +153,7 @@
 .btn-xs {
   padding: calc(var(--space-xs) / 2) var(--space-xs);
   font-size: var(--font-size-label-small);
-  border-radius: var(--radius-sm);
+  /* border-radius: var(--radius-sm); */
 }
 
 .btn-sm {
@@ -165,13 +165,13 @@
 .btn-lg {
   padding: var(--space-md) var(--space-lg);
   font-size: var(--font-size-title-large);
-  border-radius: var(--radius-lg);
+  /* border-radius: var(--radius-lg); */
 }
 
 .btn-xl {
   padding: var(--space-lg) var(--space-xl);
   font-size: var(--font-size-headline-medium);
-  border-radius: var(--radius-lg);
+  /* border-radius: var(--radius-lg); */
 }
 
 /* Button States */

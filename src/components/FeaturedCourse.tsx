@@ -25,7 +25,7 @@ export default function FeaturedCourse({
 }: FeaturedCourseProps) {
   return (
     <section className="bg-gray-100 py-8 px-4 md:py-16 md:px-20">
-      <div className="max-w-full">
+      <div className="container mx-auto">
         {/* Header with title and browse courses button */}
         <div className="flex flex-col gap-4 mb-8 md:flex-row md:items-center md:justify-between md:mb-12">
           <h1 className="text-brand-navy text-2xl font-extrabold md:text-4xl">Lorem Ipsum</h1>
