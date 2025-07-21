@@ -15,6 +15,7 @@
 
 /* Layout Styles */
 @import "./layout/containers.css";
+@import "./layout/banner.css";
 
 /* Component Styles */
 @import "./components/buttons.css";
